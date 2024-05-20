@@ -12,7 +12,9 @@
 게시판 - CRUD 기능, 조회수, 페이징 및 검색 처리
 사용자 - Security 회원가입 및 로그인, OAuth 2.0 구글, 네이버 로그인, 회원정보 수정, 회원가입시 유효성 검사 및 중복 검사
 댓글 - CRUD 기능
+
 3. 사용 기술
+
 3-1 백엔드
 주요 프레임워크 / 라이브러리
 Java 11
@@ -24,20 +26,27 @@ Build Tool
 Gradle 7.2
 DataBase
 MySQL
+
 3-2 프론트엔드
+
 Html/Css
 JavaScript
 Mustache
 Bootstrap
+
 구조 및 설계
+
 1. 패키지 구조
 패키지 구조 보기
 
 2. DB 설계
-![erd 3차 2024-05-17 ~ ] ![posts 테이블 db 설계] ![user 테이블 db 설계] ![comment 테이블 db 설계] created_date와 modified_date는 날짜 포맷을 적용해주기 위해 datetime > varchar로 변경했습니다.
+![erd 3차 2024-05-17 ~ ]
+![posts 테이블 db 설계]
+![user 테이블 db 설계]
+![comment 테이블 db 설계] created_date와 modified_date는 날짜 포맷을 적용해주기 위해 datetime > varchar로 변경했습니다.
 
 
-3. API 설계
+4. API 설계
 ![게시글 관련 API 설계]
 ![회원 관련 API 설계 (2)]
 ![댓글 관련 API 설계v2]
@@ -53,6 +62,7 @@ mustache는 로직을 넣을 수 없어 그 과정에 데이터를 렌더링 하
 화면에 표시된 후에 자바스크립트로 후처리를 해줬지만 조금 아쉬운 부분이 몇 가지 남아있다고 생각합니다.
 
 보완사항
+
 페이징 처리 및 검색 페이징에서 페이지 번호 활성화
 페이지 번호는 10페이지 단위로 보여주기
 페이지 처음, 끝으로 이동하는 버튼
