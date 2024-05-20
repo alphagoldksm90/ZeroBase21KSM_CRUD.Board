@@ -16,41 +16,62 @@
 
 3-1 백엔드
 주요 프레임워크 / 라이브러리
+
 Java 11
+
 SpringBoot
+
 JPA(Spring Data JPA)
+
 Spring Security
+
 OAuth 2.0
+
 Build Tool
+
 Gradle 7.2
+
 DataBase
+
 MySQL
 
 3-2 프론트엔드
 
 Html/Css
+
 JavaScript
+
 Mustache
+
 Bootstrap
 
 구조 및 설계
 
 1. 패키지 구조
+
 패키지 구조 보기
 
 2. DB 설계
+
 ![erd 3차 2024-05-17 ~ ]
+
 ![posts 테이블 db 설계]
+
 ![user 테이블 db 설계]
+
 ![comment 테이블 db 설계] created_date와 modified_date는 날짜 포맷을 적용해주기 위해 datetime > varchar로 변경했습니다.
 
 
 4. API 설계
+
 ![게시글 관련 API 설계]
+
 ![회원 관련 API 설계 (2)]
+
 ![댓글 관련 API 설계v2]
 
 1. 프로젝트 보완사항
+
 초기에 구상한 기능은 기본적인 CRUD 즉, 게시판에 올라오는 게시글을 대상으로 Create, Read, Update, Delete가 가능한 게시판이었습니다.
 템플릿 엔진으로 Mustache를 선택했는데, 그 이유는 Mustache는 단순히 화면에 데이터를 렌더링 하는 엔진이고
 Logic-less 하기 때문에 View의 역할과 서버의 역할이 명확하게 분리되어 OOP의 5원칙 중 하나인 SRP를 지킬 수 있어
