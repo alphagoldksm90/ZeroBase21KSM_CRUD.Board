@@ -1,5 +1,4 @@
 📎 ZeroBase 21TH KSM BOARD Project
-메인 화면
 
 들어가며
 1. 프로젝트 소개
